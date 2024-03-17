@@ -1,0 +1,5 @@
+name: Events theme
+type: theme
+base theme: catalog_lite
+description: 'Catalog life theme overriding for events'
+core_version_requirement: ^10
