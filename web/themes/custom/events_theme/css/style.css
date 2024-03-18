@@ -1,0 +1,87 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+.FrontPageEvent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 2px solid #e7e7e7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.FrontPageEvent .content{
+    width: 90%;
+}
+
+.EventsPageEvent .content{
+    width: 100%;
+    height: 60%;
+}
+
+.FrontPageEvent .content, .EventsPageEvent .content{
+    padding: 10px;
+    gap: 10px;
+}
+
+.FrontPageEvent .content .event-tags, .EventsPageEvent .content .event-tags,.Event-fullpage .content .event-tags{
+    border: 1px solid #e7e7e7;
+    border-radius: 25px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.EventsPageEvent{
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.EventsPageEvent .event-logo a{
+    height: 9%;
+    width: 100%;
+    overflow: hidden;
+}
+.EventsPageEvent .event-logo img{
+    height: 100%;
+    width: 100%;
+}
+.EventsPageEvent h2 {
+    font-size: 20px;
+}
+.EventsPageEvent .event-date {
+    font-weight: bold;
+}
+
+.Event-fullpage{
+    gap: 10px;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Event-fullpage .content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 20px;
+}
+
+.Event-fullpage .content .event-tags{
+    padding: 10px;
+}
+.Event-fullpage .content h2{
+    font-size: 35px;
+    color: #337ab7;
+}
+
+.LatestEvents-block h2{
+    font-size: 23px;
+}
