@@ -13,7 +13,6 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
-
 }
 
 .FrontPageEvent .content{
@@ -84,4 +83,8 @@
 
 .LatestEvents-block h2{
     font-size: 23px;
+}
+
+.content div{
+    color: #777;
 }
