@@ -40,8 +40,11 @@
         // If viewing a node, get the fully loaded node object
         $node = \Drupal::routeMatch()->getParameter('node');
 
-        if (!(is_null($node))) {//allow access by view rsvplist permission only if we're on a node page
-            return AccessResult::allowedIfHasPermission($account,'view rsvplist');
+        if (!(is_null($node))) {
+            $enabler = \Drupal::service('rsvplist.enabler');
+            if($enabler->isEnabled($node)){
+                return AccessResult::allowedIfHasPermission($account,'view rsvplist');//allow access by view rsvplist permission only if we're on a node page
+            }
         }
 
         return AccessResult::forbidden();                       

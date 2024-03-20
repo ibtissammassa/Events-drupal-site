@@ -1,0 +1,2 @@
+allowed_types: #to set the default value of the allowed_type
+  - Event
