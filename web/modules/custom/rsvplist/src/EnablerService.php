@@ -28,10 +28,16 @@ class EnablerService {
             return False;
         }
         try{
-            $select = $this->database_connection->select('rsvplist_enabled',"re");
-            $select->fields("re", ["nid"]);
-            $select->condition("nid", $node->id());
-            $result = $select->execute();
+            $select_enabled = $this->database_connection->select('rsvplist_enabled',"re");
+            $select_enabled->fields("re", ["nid"]);
+            $select_enabled->condition("nid", $node->id());
+            $result = $select_enabled->execute();
+
+            if($node->getType()=='event'){
+                $seats_left = $node->get('field_event_date');
+                // dump($seats_left);
+            }
+            
 
             return !(empty($result->fetchCol()));
         }
